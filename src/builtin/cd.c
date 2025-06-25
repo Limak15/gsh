@@ -20,6 +20,13 @@ void gsh_cd(char** args, int argc) {
     
     // just cd. go to home dir
     if(argc == 1) {
+        const char* home = getenv("HOME");
+
+        if(home == NULL) {
+            fprintf(stderr, "cd: HOME not set\n");
+            return;
+        }
+
         change_dir(getenv("HOME")); 
         return;
     }
