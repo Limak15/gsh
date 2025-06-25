@@ -3,5 +3,6 @@
 
 #include "exit.h"
 #include "version.h"
+#include "cd.h"
 
 #endif

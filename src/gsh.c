@@ -4,6 +4,7 @@ t_builtins builtins[] = {
     {.command = "exit", .func = &gsh_exit },
     {.command = "gsh_version", .func = &gsh_version },
     {.command = "history", .func = &history_cmd },
+    {.command = "cd", .func = &gsh_cd },
 };
 
 static int status = 0;
